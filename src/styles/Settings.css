@@ -1,0 +1,107 @@
+/* Settings.css: Styles for the settings page */
+
+/* Base styles for the settings container */
+.settings {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem;
+  min-height: 100vh; /* Ensures the settings page takes up at least the full viewport height */
+}
+
+/* Styles for the settings header */
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the main title */
+.settings h1 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Styles for the action buttons container */
+.settings-actions {
+  display: flex;
+  gap: 1rem; /* Creates consistent spacing between action buttons */
+}
+
+/* Styles for the options container */
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Provides vertical spacing between setting options */
+}
+
+/* Styles for individual setting options */
+.setting-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-option label {
+  font-weight: bold;
+}
+
+/* Styles for select dropdowns and radio button groups */
+.setting-option select,
+.setting-option .radio-group {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+/* Styles for radio button groups */
+.radio-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Styles for action buttons */
+.save-changes-button,
+.back-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none;
+  display: inline-block;
+}
+
+.save-changes-button:hover,
+.back-button:hover {
+  background-color: var(--accent-color);
+}
+
+.back-button {
+  background-color: var(--primary-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .settings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .settings-actions {
+    width: 100%;
+  }
+
+  .save-changes-button,
+  .back-button {
+    flex: 1; /* Makes buttons take up equal width on smaller screens */
+    text-align: center;
+  }
+}

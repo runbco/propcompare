@@ -1,0 +1,110 @@
+/* Styles for the login modal overlay */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust overlay background for dark mode */
+.login-modal-overlay.dark-mode {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style the login modal for dark mode */
+.login-modal-overlay.dark-mode .login-modal {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Style the heading in dark mode */
+.login-modal-overlay.dark-mode .login-modal h2 {
+  color: var(--primary-color);
+}
+
+/* Style input fields in dark mode */
+.login-modal-overlay.dark-mode .login-modal input {
+  background-color: #34495e;
+  color: var(--text-color);
+  border-color: #7f8c8d;
+}
+
+/* Style buttons in dark mode */
+.login-modal-overlay.dark-mode .login-modal button[type="submit"],
+.login-modal-overlay.dark-mode .login-modal .test-login-button {
+  background-color: var(--secondary-color);
+}
+
+/* Style close button in dark mode */
+.login-modal-overlay.dark-mode .login-modal .close-button {
+  color: var(--text-color);
+}
+
+/* Style the main login modal container */
+.login-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+}
+
+/* Style the heading of the login modal */
+.login-modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+/* Style the form within the login modal */
+.login-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style input fields in the login form */
+.login-modal input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style submit and test login buttons */
+.login-modal button[type="submit"],
+.login-modal .test-login-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Style the test login button */
+.login-modal .test-login-button {
+  background-color: var(--accent-color);
+}
+
+/* Style the close button */
+.login-modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Style error messages */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}

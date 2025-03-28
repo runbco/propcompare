@@ -1,0 +1,24 @@
+/* PropertyResultsDiagram.css: Styles for the property results diagram component */
+
+/* Base styles for the property results diagram container */
+.property-results-diagram {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the diagram title */
+.property-results-diagram h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Dark mode styles are handled by CSS variables */
+.property-results-diagram.dark-mode {
+  /* No specific styles needed here as they are controlled by CSS variables */
+}

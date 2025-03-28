@@ -1,0 +1,14 @@
+/* Styles for the group result block component */
+
+/* Remove top margin and add bottom margin to the heading */
+.group-result-block h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Style for the group score container */
+.group-score {
+  display: flex;
+  justify-content: space-between; /* Spread items to the edges of the container */
+  margin-bottom: 5px; /* Add some space below each score item */
+}

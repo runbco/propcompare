@@ -1,0 +1,233 @@
+.property-comparison {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.property-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.add-test-data-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-test-data-button:hover {
+  background-color: var(--accent-color);
+}
+
+.collapsible-section {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.collapsible-section h2 {
+  padding: 1rem;
+  margin: 0;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-container,
+.diagrams-container {
+  padding: 1rem;
+}
+
+.diagrams-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.chart-container {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.property-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.property-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+}
+
+.property-card h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.property-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.property-financials-section,
+.property-forms {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.property-financials-section h3,
+.property-forms h3 {
+  color: var(--secondary-color);
+  margin-top: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: var(--card-background);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.diagram-selector {
+  margin-top: 2rem;
+}
+
+.diagram-option {
+  margin-bottom: 1rem;
+}
+
+.diagram-preview {
+  margin-top: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .property-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dark-mode {
+  /* Dark mode styles are handled by CSS variables */
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chart-header h3 {
+  margin: 0;
+}
+
+.chart-content {
+  height: 300px;
+  transition: height 0.3s ease;
+}
+
+.expanded .chart-content {
+  height: 600px;
+}
+
+.results-section h3,
+.diagrams-section h3 {
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.results-section h3:hover,
+.diagrams-section h3:hover {
+  background-color: #e0e0e0;
+}
+
+.property-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.property-card-header h2 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.save-changes-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-changes-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.diagram-container {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.diagrams-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

@@ -1,0 +1,96 @@
+/* Base styles for the property financials component */
+.property-financials {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 1rem;
+}
+
+/* Styles for each financial group */
+.financial-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the group title */
+.group-title {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--card-background);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.group-title:hover {
+  background-color: var(--background-color);
+}
+
+/* Styles for individual financial fields */
+.financial-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+/* Styles for labels in financial fields */
+.financial-field label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+/* Styles for input fields */
+.financial-field input {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+/* Focus styles for input fields */
+.financial-field input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+/* Styles for the expand/collapse icon */
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .financial-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .financial-field label {
+    margin-bottom: 0.5rem;
+  }
+
+  .financial-field input {
+    width: 100%;
+  }
+}
+
+/* Dark mode styles are handled by CSS variables */
+.dark-mode {
+  /* No specific styles needed here as they are handled by CSS variables */
+}

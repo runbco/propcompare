@@ -1,0 +1,56 @@
+/* Styles for the main container of the suburb information form */
+.suburb-information-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the main heading of the form */
+.suburb-information-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color); /* Adds a colored underline to the heading */
+  padding-bottom: 10px;
+}
+
+/* Styles for subgroups within the form */
+.suburb-subgroup {
+  margin-bottom: 20px;
+}
+
+/* Styles for subgroup headings */
+.suburb-subgroup h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+/* Styles for individual form fields */
+.suburb-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Styles for form labels */
+.suburb-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styles for select dropdowns */
+.suburb-field select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styles for focused select dropdowns */
+.suburb-field select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2); /* Adds a subtle glow effect on focus */
+}

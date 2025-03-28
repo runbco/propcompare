@@ -1,0 +1,64 @@
+/* Styles for the main container of the suburb results table */
+.suburb-results-table {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the main heading of the results table */
+.suburb-results-table h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-color); /* Adds a colored underline to the heading */
+  padding-bottom: 10px;
+}
+
+/* Styles for the table itself */
+.suburb-results-table table {
+  width: 100%;
+  border-collapse: collapse; /* Removes spacing between cells */
+}
+
+/* Styles for table headers and cells */
+.suburb-results-table th,
+.suburb-results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Styles for table headers */
+.suburb-results-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Styles for group title rows */
+.suburb-results-table .group-title-row td {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Styles for the total rating row */
+.suburb-results-table .total-rating-row {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* Adds a thicker top border to the total rating row for emphasis */
+.suburb-results-table .total-rating-row td {
+  border-top: 2px solid #333;
+}
+
+/* Styles for subgroup total rows */
+.suburb-results-table .subgroup-total-row {
+  background-color: #f9f9f9;
+}
+
+/* Styles for subgroup total row cells */
+.suburb-results-table .subgroup-total-row td {
+  font-style: italic;
+  border-top: 1px solid #ddd;
+}

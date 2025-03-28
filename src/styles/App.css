@@ -1,0 +1,50 @@
+/* Define global CSS variables for consistent theming */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+}
+
+/* Set global styles for the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Define dark mode color scheme */
+body.dark-mode {
+  --primary-color: #2980b9;
+  --secondary-color: #27ae60;
+  --accent-color: #c0392b;
+  --text-color: #f5f5f5;
+  --background-color: #2c3e50;
+}
+
+/* Set maximum width and center the main app container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ... (keep the existing styles) */
+
+/* Style the dark mode toggle button */
+.dark-mode-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Add hover effect to the dark mode toggle button */
+.dark-mode-toggle:hover {
+  background-color: #c0392b;
+}
+
+/* Add more dark mode styles for other components as needed */
